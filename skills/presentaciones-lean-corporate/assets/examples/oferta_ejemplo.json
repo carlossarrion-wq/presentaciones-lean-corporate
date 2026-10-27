@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "title": "Oferta de Servicios Lean IT – CR2026-045 Agentes IA para Gestión de Incidencias",
+    "author": "Lean Corporate Services",
+    "version": "v1.0",
+    "date": "27 Octubre 2026",
+    "profile": "lean-corporate"
+  },
+  "slides": [
+    {
+      "layout": "title",
+      "title": "Oferta de Servicios Lean IT",
+      "subtitle": "CR2026-045 Agentes IA para Gestión de Incidencias",
+      "notes": "Contenido de ejemplo ficticio para mostrar el uso del skill con la plantilla Lean Corporate."
+    },
+    {
+      "layout": "agenda",
+      "title": "Contenido",
+      "items": [
+        "Introducción",
+        "Antecedentes y Objetivos",
+        "Caso de Uso “Gestión de Incidencias”",
+        "Plan de Implantación",
+        "Modelo Económico",
+        "Términos y Condiciones",
+        "Perfiles Tipo"
+      ]
+    },
+    {
+      "layout": "text",
+      "section": "1. Introducción",
+      "title": "Solicitud de Cambio de Alcance",
+      "blocks": [
+        "Se solicita por parte del Cliente, en la **“CR2026-045 Agentes IA para Gestión de Incidencias”**, la realización de actividades adicionales por cambio de alcance en el proyecto ejecutado por Lean Corporate Services, S.L.:",
+        {
+          "bullets": [
+            "**Caso de Uso “Gestión de Incidencias”**, consistente en la implantación de una solución basada en Agentes IA que clasifique, enriquezca y proponga la resolución de las incidencias de primer nivel.",
+            "**Base de conocimiento de soluciones**, que consolide las resoluciones históricas para su reutilización por los agentes y por el equipo de soporte."
+          ]
+        },
+        "Los servicios descritos en esta oferta se enmarcan en los acuerdos y términos y condiciones del **Contrato Master de Prestación de Servicios** vigente y sus adendas posteriores.",
+        "Para cualquier aspecto no regulado expresamente en esta propuesta regirá lo establecido en dicho contrato."
+      ],
+      "notes": "Diapositiva de contexto contractual: se lee, no se presenta."
+    },
+    {
+      "layout": "cards",
+      "section": "2. Antecedentes y Objetivos",
+      "title": "Tres objetivos para el primer trimestre de servicio",
+      "lead": "La iniciativa se ha construido a partir de sesiones de trabajo con el equipo de Soporte IT, en las que se identificaron los principales puntos de fricción del proceso actual y las oportunidades reales de automatización.",
+      "cards": [
+        {
+          "icon": "1",
+          "title": "Reducir el tiempo de resolución",
+          "text": "Clasificación y enrutado automáticos de las incidencias en el momento de su registro, sin intervención manual."
+        },
+        {
+          "icon": "2",
+          "title": "Resolver a la primera",
+          "text": "Propuesta de solución basada en incidencias similares ya resueltas y en la documentación técnica de cada aplicación.",
+          "highlight": true
+        },
+        {
+          "icon": "3",
+          "title": "Reutilizar el conocimiento",
+          "text": "Base de conocimiento viva que crece con cada incidencia cerrada y que podrán consumir otros agentes."
+        }
+      ]
+    },
+    {
+      "layout": "kpis",
+      "section": "3. Caso de Uso “Gestión de Incidencias”",
+      "title": "Problemática actual",
+      "lead": "El volumen de incidencias de primer nivel crece de forma sostenida y buena parte del esfuerzo se dedica a tareas repetitivas de clasificación y búsqueda de soluciones.",
+      "kpis": [
+        {
+          "value": "+3.800",
+          "label": "Incidencias de nivel 1 registradas en 2025",
+          "delta": "+22 % vs. 2024",
+          "trend": "up",
+          "good": "down"
+        },
+        {
+          "value": "35 min",
+          "label": "Tiempo medio de clasificación y enrutado",
+          "delta": "+6 min",
+          "trend": "up",
+          "good": "down"
+        },
+        {
+          "value": "18 %",
+          "label": "Incidencias reasignadas por error de clasificación",
+          "delta": "+4 pp",
+          "trend": "up",
+          "good": "down"
+        }
+      ],
+      "bullets": [
+        "Alto consumo de tiempo del equipo en tareas de bajo valor",
+        "Calidad desigual en la categorización y el enriquecimiento",
+        "Conocimiento de resolución disperso y poco reutilizado"
+      ],
+      "source": "Herramienta de ticketing, enero–diciembre 2025 (datos de ejemplo)"
+    },
+    {
+      "layout": "process",
+      "section": "3. Caso de Uso “Gestión de Incidencias”",
+      "title": "Solución propuesta: cuatro agentes coordinados",
+      "lead": "Cada incidencia recorre un flujo en el que intervienen agentes especializados; el técnico de soporte mantiene siempre la decisión final.",
+      "steps": [
+        {
+          "title": "Clasificar",
+          "text": "El **agente clasificador** asigna categoría, prioridad y grupo resolutor a partir de la descripción."
+        },
+        {
+          "title": "Enriquecer",
+          "text": "El **agente de contexto** añade información del CI afectado, cambios recientes e incidencias relacionadas."
+        },
+        {
+          "title": "Proponer",
+          "text": "El **agente resolutor** sugiere una solución citando las fuentes de la base de conocimiento."
+        },
+        {
+          "title": "Aprender",
+          "text": "Al cierre, el **agente de conocimiento** incorpora la resolución validada a la base."
+        }
+      ],
+      "highlight": 2
+    },
+    {
+      "layout": "comparison",
+      "section": "3. Caso de Uso “Gestión de Incidencias”",
+      "title": "Comparativa con otras alternativas tecnológicas",
+      "options": [
+        {
+          "name": "Agentes sobre la plataforma IA corporativa",
+          "recommended": true,
+          "pros": [
+            "Reutiliza bases de conocimiento existentes",
+            "Time-to-value más rápido",
+            "Menor dependencia del proveedor"
+          ],
+          "cons": [
+            "Requiere integración vía API con ticketing"
+          ],
+          "verdict": "Opción recomendada"
+        },
+        {
+          "name": "Módulo IA nativo de la herramienta de ticketing",
+          "pros": [
+            "Integración nativa con la interfaz",
+            "Gobierno único"
+          ],
+          "cons": [
+            "Licenciamiento adicional elevado",
+            "Conocimiento aislado del resto de agentes"
+          ],
+          "verdict": "Coste y lock-in"
+        }
+      ]
+    },
+    {
+      "layout": "timeline",
+      "section": "4. Plan de Implantación",
+      "title": "Producción en 12 semanas con validaciones intermedias",
+      "steps": [
+        {
+          "label": "Sem. 1–2",
+          "title": "Descubrimiento",
+          "text": "Alcance, KPIs y auditoría de datos históricos"
+        },
+        {
+          "label": "Sem. 3–4",
+          "title": "Diseño",
+          "text": "Arquitectura, integraciones y prompts"
+        },
+        {
+          "label": "Sem. 5–8",
+          "title": "Construcción",
+          "text": "Agentes, conectores y pruebas unitarias"
+        },
+        {
+          "label": "Sem. 9–10",
+          "title": "Validación",
+          "text": "Pruebas E2E y UAT con el equipo de soporte"
+        },
+        {
+          "label": "Sem. 11–12",
+          "title": "Despliegue",
+          "text": "Puesta en producción y soporte post-implantación"
+        }
+      ]
+    },
+    {
+      "layout": "table",
+      "section": "4. Plan de Implantación",
+      "title": "Detalle de Actividades",
+      "lead": "Actividades organizadas según la estructura WBS, con su objetivo y resultado esperado.",
+      "columns": [
+        "WBS",
+        "Fase",
+        "Tarea",
+        "Objetivo / Resultados"
+      ],
+      "col_widths": [
+        0.7,
+        2.2,
+        4.2,
+        5
+      ],
+      "rows": [
+        [
+          "1.1",
+          "Descubrimiento",
+          "Alineamiento de alcance y stakeholders",
+          "Alcance validado y aplicaciones piloto confirmadas"
+        ],
+        [
+          "1.2",
+          "Descubrimiento",
+          "Definición de KPIs de éxito",
+          "KPIs cuantitativos y cualitativos acordados"
+        ],
+        [
+          "1.3",
+          "Descubrimiento",
+          "Auditoría de datos históricos de incidencias",
+          "Inventario de fuentes y calidad del dato"
+        ],
+        [
+          "1.4",
+          "Descubrimiento",
+          "Requisitos funcionales por agente",
+          "Requisitos priorizados por agente"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "2.1",
+          "Diseño",
+          "Arquitectura de la solución",
+          "Diagrama de componentes y responsabilidades"
+        ],
+        [
+          "2.2",
+          "Diseño",
+          "Diseño de integraciones con ticketing y CMDB",
+          "Especificación de APIs y permisos"
+        ],
+        [
+          "2.3",
+          "Diseño",
+          "Diseño de prompts, contexto y memoria",
+          "Catálogo inicial de prompts"
+        ],
+        [
+          "2.4",
+          "Diseño",
+          "Modelo de datos y trazabilidad",
+          "Metadatos y versionado definidos"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "3.1",
+          "Construcción",
+          "Desarrollo del agente clasificador",
+          "Agente operativo en entorno de desarrollo"
+        ],
+        [
+          "3.2",
+          "Construcción",
+          "Desarrollo del agente de contexto",
+          "Enriquecimiento automático disponible"
+        ],
+        [
+          "3.3",
+          "Construcción",
+          "Desarrollo del agente resolutor",
+          "Propuestas con citas a fuentes"
+        ],
+        [
+          "3.4",
+          "Construcción",
+          "Desarrollo del agente de conocimiento",
+          "Base de conocimiento actualizada al cierre"
+        ],
+        [
+          "3.5",
+          "Construcción",
+          "Pruebas unitarias",
+          "Suite de pruebas y evidencias"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "4.1",
+          "Validación",
+          "Pruebas E2E",
+          "Evidencias de ejecución completa"
+        ],
+        [
+          "4.2",
+          "Validación",
+          "UAT con el equipo de soporte",
+          "Acta de aceptación"
+        ],
+        [
+          "",
+          "",
+          "",
+          ""
+        ],
+        [
+          "5.1",
+          "Despliegue",
+          "Puesta en producción",
+          "Runbook y configuración por entorno"
+        ],
+        [
+          "5.2",
+          "Despliegue",
+          "Soporte post-implantación (2 semanas)",
+          "Informe de estabilización y KPIs"
+        ]
+      ]
+    },
+    {
+      "layout": "chart",
+      "section": "3. Caso de Uso “Gestión de Incidencias”",
+      "title": "Impacto esperado: −60 % de esfuerzo en clasificación",
+      "chart": {
+        "type": "bar",
+        "categories": [
+          "Clasificación y enrutado",
+          "Búsqueda de solución",
+          "Documentación del cierre",
+          "Reasignaciones"
+        ],
+        "series": [
+          {
+            "name": "Reducción estimada",
+            "values": [
+              0.6,
+              0.4,
+              0.5,
+              0.7
+            ]
+          }
+        ],
+        "number_format": "0%",
+        "highlight": 0
+      },
+      "insights": [
+        "Estimación basada en pilotos comparables",
+        "El ahorro se reinvierte en incidencias de nivel 2",
+        "Se medirá con los KPIs acordados en la fase 1"
+      ],
+      "source": "Estimación propia (datos de ejemplo)"
+    },
+    {
+      "layout": "pricing",
+      "section": "5. Modelo Económico",
+      "band": "Coste de los Servicios de “CR2026-045 Agentes IA para Gestión de Incidencias”",
+      "summary": [
+        {
+          "label": "Precio de referencia de la propuesta",
+          "value": "48.000,00 €"
+        },
+        {
+          "label": "Descuento comercial aplicado",
+          "value": "−8.000,00 €"
+        },
+        {
+          "label": "Importe total final de la oferta",
+          "value": "40.000,00 €",
+          "strong": true
+        }
+      ],
+      "tables": [
+        {
+          "band": "Desglose del importe final",
+          "columns": [
+            "Descripción",
+            "Importe final"
+          ],
+          "rows": [
+            [
+              "Implantación de los agentes de gestión de incidencias",
+              "32.000,00 €"
+            ],
+            [
+              "Base de conocimiento de soluciones",
+              "8.000,00 €"
+            ],
+            [
+              "Total",
+              "40.000,00 €"
+            ]
+          ],
+          "col_widths": [
+            4,
+            1
+          ],
+          "total_row": true
+        },
+        {
+          "band": "Plan de facturación",
+          "columns": [
+            "Concepto",
+            "Mes 1",
+            "Mes 2",
+            "Mes 3"
+          ],
+          "rows": [
+            [
+              "Gestión de Incidencias",
+              "13.333,33 €",
+              "13.333,33 €",
+              "13.333,34 €"
+            ]
+          ],
+          "col_widths": [
+            3,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "note": "Importes sin IVA. Datos de ejemplo."
+    },
+    {
+      "layout": "text",
+      "section": "6. Términos y Condiciones",
+      "blocks": [
+        {
+          "bullets": [
+            "Esta oferta se tramitará y aprobará por el procedimiento de Gestión de Cambios establecido en el Contrato Master, y se formalizará mediante el documento de Adenda que corresponda.",
+            "Mediante la firma de este documento se confirma la aplicación de los términos y condiciones descritos y se autoriza el inicio de los trabajos."
+          ]
+        }
+      ],
+      "signatures": [
+        {
+          "name": "Nombre Apellido",
+          "role": "Responsable de Sistemas",
+          "company": "Cliente, S.A."
+        },
+        {
+          "name": "Nombre Apellido",
+          "role": "Director/a",
+          "company": "Lean Corporate Services, S.L."
+        }
+      ]
+    },
+    {
+      "layout": "text",
+      "section": "7. Perfiles Tipo",
+      "title": "Arquitecto/a de Soluciones de IA Generativa",
+      "columns": 2,
+      "lead": "Perfil responsable de la visión técnica de la solución y de su integración con el ecosistema tecnológico del Cliente.",
+      "blocks": [
+        {
+          "heading": "Responsabilidades principales"
+        },
+        {
+          "bullets": [
+            "Diseño de la arquitectura de agentes, conectores y base de conocimiento",
+            "Definición de estándares de seguridad, trazabilidad y observabilidad",
+            "Coordinación técnica con los equipos de plataforma del Cliente",
+            "Revisión de calidad de prompts y respuestas antes de cada release"
+          ]
+        },
+        {
+          "heading": "Habilidades clave"
+        },
+        {
+          "bullets": [
+            "Experiencia en arquitecturas cloud y servicios gestionados de IA",
+            "Diseño de soluciones RAG y orquestación multiagente",
+            "Integración mediante APIs y protocolos estándar (MCP)",
+            "Comunicación con perfiles de negocio y técnicos"
+          ]
+        }
+      ]
+    },
+    {
+      "layout": "statement",
+      "text": "Proponemos arrancar en **noviembre** para tener los agentes en producción en **febrero de 2027**"
+    },
+    {
+      "layout": "closing",
+      "title": "CR2026-045 Agentes IA para Gestión de Incidencias",
+      "next_steps": [
+        "Aprobación de la oferta",
+        "Kick-off con el equipo de Soporte IT",
+        "Selección de aplicaciones piloto"
+      ]
+    }
+  ]
+}

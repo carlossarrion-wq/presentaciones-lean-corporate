@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "title": "Plan de transformación de atención al cliente 2027",
+    "author": "Dirección de Operaciones",
+    "date": "Octubre 2026",
+    "theme": "ejecutivo",
+    "footer": "Plan de transformación 2027 · Confidencial",
+    "slide_numbers": true
+  },
+  "slides": [
+    {
+      "layout": "title",
+      "kicker": "Comité de Dirección",
+      "title": "Atención al cliente 2027: **menos esperas**, más resolución",
+      "subtitle": "Propuesta de transformación con agentes de IA y rediseño de procesos",
+      "image": "sample.jpg",
+      "notes": "Abrir con la pregunta: ¿cuántos de vosotros habéis llamado a nuestro servicio este año?"
+    },
+    {
+      "layout": "agenda",
+      "title": "Agenda",
+      "items": [
+        {"title": "Dónde estamos", "text": "Situación actual y causas raíz"},
+        {"title": "Qué proponemos", "text": "Tres palancas de transformación"},
+        {"title": "Impacto esperado", "text": "Negocio, cliente y equipo"},
+        {"title": "Cómo lo haremos", "text": "Hoja de ruta y gobierno"},
+        {"title": "Qué necesitamos hoy", "text": "Decisiones del comité"}
+      ],
+      "notes": "Cinco bloques, 25 minutos más preguntas."
+    },
+    {
+      "layout": "section",
+      "number": "01",
+      "title": "Dónde estamos",
+      "subtitle": "El volumen crece un 18 % anual y la resolución en primer contacto se estanca"
+    },
+    {
+      "layout": "kpis",
+      "kicker": "Situación actual",
+      "title": "El servicio **no escala**: más volumen, más espera y menos resolución",
+      "kpis": [
+        {"value": "4,2 M", "label": "Contactos anuales en todos los canales", "delta": "+18 % vs. 2025", "good": "down", "trend": "up"},
+        {"value": "7:40", "label": "Tiempo medio de espera en teléfono (min)", "delta": "+2:10 min", "good": "down", "trend": "up"},
+        {"value": "61 %", "label": "Resolución en primer contacto (FCR)", "delta": "−4 pp", "trend": "down"},
+        {"value": "32", "label": "NPS del canal de atención", "delta": "−6 pts", "trend": "down"}
+      ],
+      "source": "Cuadro de mando de operaciones, enero–septiembre 2026",
+      "takeaway": "Si no cambiamos el modelo, en 2027 necesitaríamos **+140 agentes** solo para mantener el servicio actual",
+      "notes": "Subrayar que el NPS cae a la vez que suben los costes: no es un problema de eficiencia sino de modelo."
+    },
+    {
+      "layout": "chart",
+      "title": "El 58 % de los contactos son **consultas repetitivas** que podrían resolverse sin agente",
+      "chart": {
+        "type": "bar",
+        "categories": ["Estado de factura", "Lecturas y consumo", "Cambio de datos", "Averías", "Altas y bajas", "Reclamaciones"],
+        "series": [{"name": "% de contactos", "values": [0.24, 0.19, 0.15, 0.17, 0.14, 0.11]}],
+        "number_format": "0%",
+        "highlight": 0
+      },
+      "insights": [
+        "Las tres primeras tipologías (**58 %**) siguen reglas estables y datos ya disponibles",
+        "Averías y reclamaciones requieren criterio humano y seguirán con agente",
+        "Un asistente de IA puede cerrar la mayoría de consultas de factura en < 2 min"
+      ],
+      "source": "Muestra de 120.000 contactos categorizados, T3 2026",
+      "notes": "El dato de facturas es el más llamativo: es el primer caso de uso."
+    },
+    {
+      "layout": "chart",
+      "title": "La espera se dispara en **los picos de facturación**, no de forma continua",
+      "chart": {
+        "type": "line",
+        "categories": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep"],
+        "series": [
+          {"name": "2025", "values": [5.1, 5.4, 6.8, 5.2, 5.0, 6.9, 5.3, 4.8, 6.5]},
+          {"name": "2026", "values": [5.9, 6.4, 8.9, 6.1, 6.0, 9.4, 6.6, 5.7, 9.1]}
+        ],
+        "number_format": "0.0",
+        "subtitle": "Tiempo medio de espera telefónica (minutos)",
+        "data_labels": false
+      },
+      "takeaway": "Los picos trimestrales explican el **70 %** del deterioro: la capacidad elástica es la clave",
+      "source": "Sistema de telefonía (ACD)"
+    },
+    {
+      "layout": "section",
+      "number": "02",
+      "title": "Qué proponemos",
+      "subtitle": "Tres palancas que se refuerzan entre sí"
+    },
+    {
+      "layout": "cards",
+      "title": "Tres palancas para **resolver antes** y con menos esfuerzo",
+      "cards": [
+        {"title": "Autoservicio inteligente", "text": "Asistente de IA en web, app y WhatsApp que resuelve consultas de factura, lecturas y cambios de datos de punta a punta."},
+        {"title": "Agente aumentado", "text": "Copiloto para el agente humano: resumen del cliente, respuesta sugerida y cierre automático del caso.", "highlight": true},
+        {"title": "Proactividad", "text": "Avisos antes de que el cliente llame: facturas anómalas, cortes programados y estado de averías."}
+      ],
+      "takeaway": "Empezamos por **facturación**: mayor volumen, menor riesgo y datos ya integrados",
+      "notes": "La tarjeta central está resaltada porque es la que más impacto tiene en el equipo."
+    },
+    {
+      "layout": "two-column",
+      "style": "contrast",
+      "title": "Del modelo reactivo a un modelo que **anticipa y resuelve**",
+      "left": {
+        "heading": "Hoy",
+        "bullets": ["El cliente llama cuando ya tiene el problema", "El agente busca en 6 sistemas distintos", "Cada pico se cubre con horas extra", "La calidad se mide por muestreo (2 %)"]
+      },
+      "right": {
+        "heading": "2027",
+        "bullets": ["Avisamos antes de que surja la duda", "Una única vista del cliente con copiloto", "La IA absorbe los picos de forma elástica", "El 100 % de las interacciones se analiza"]
+      }
+    },
+    {
+      "layout": "comparison",
+      "title": "Recomendamos un **modelo híbrido**: plataforma propia sobre servicios gestionados",
+      "options": [
+        {"name": "Desarrollo a medida", "pros": ["Control total del roadmap", "Sin dependencia de proveedor"], "cons": ["18 meses hasta producción", "Equipo de 25 personas"], "verdict": "Demasiado lento"},
+        {"name": "Híbrido", "recommended": true, "pros": ["Producción en 5 meses", "Datos y lógica bajo nuestro control", "Escala con la demanda"], "cons": ["Requiere gobierno de proveedores"], "verdict": "Mejor equilibrio"},
+        {"name": "Solución SaaS cerrada", "pros": ["Arranque en 8 semanas", "Coste inicial bajo"], "cons": ["Integración limitada con facturación", "Datos fuera de nuestro perímetro"], "verdict": "Riesgo regulatorio"}
+      ]
+    },
+    {
+      "layout": "matrix",
+      "title": "Priorizamos los casos de uso de **alto valor y baja complejidad**",
+      "x_label": "Complejidad de implantación",
+      "y_label": "Valor para el negocio",
+      "quadrants": [
+        {"title": "Quick wins", "text": "Estado de factura, lecturas, duplicados de factura"},
+        {"title": "Apuestas estratégicas", "text": "Gestión de reclamaciones, ofertas personalizadas"},
+        {"title": "Mejoras incrementales", "text": "Cambio de datos de contacto, recordatorios de pago"},
+        {"title": "Descartar por ahora", "text": "Contratación compleja B2B, litigios"}
+      ],
+      "highlight": 0,
+      "bullets": ["Fase 1 se centra en el cuadrante **superior izquierdo**", "Las apuestas estratégicas entran en fase 2 con el aprendizaje acumulado"]
+    },
+    {
+      "layout": "big-number",
+      "title": "El impacto económico se concentra en el primer año completo",
+      "value": "12,4 M€",
+      "label": "Ahorro operativo anual a partir de 2028",
+      "context": ["**65 %** por contactos resueltos sin agente", "**25 %** por menor tiempo medio de gestión", "**10 %** por reducción de rellamadas"],
+      "source": "Modelo financiero v3, escenario base"
+    },
+    {
+      "layout": "table",
+      "title": "El caso de negocio es positivo **desde el segundo año**",
+      "columns": ["Concepto (M€)", "2027", "2028", "2029", "Total"],
+      "rows": [
+        ["Inversión en plataforma", "−4,8", "−1,2", "−0,8", "−6,8"],
+        ["Costes de operación IA", "−1,1", "−1,6", "−1,8", "−4,5"],
+        ["Ahorro operativo", "5,2", "12,4", "13,1", "30,7"],
+        ["Ingresos por retención", "0,6", "1,9", "2,4", "4,9"],
+        ["**Flujo neto**", "**−0,1**", "**11,5**", "**12,9**", "**24,3**"]
+      ],
+      "col_align": ["left", "right", "right", "right", "right"],
+      "highlight_row": 4,
+      "source": "Dirección Financiera, escenario base"
+    },
+    {
+      "layout": "timeline",
+      "title": "Hoja de ruta: **valor visible en 5 meses**, despliegue completo en 18",
+      "steps": [
+        {"label": "Nov 2026", "title": "Diseño", "text": "Casos de uso, arquitectura y gobierno del dato"},
+        {"label": "Mar 2027", "title": "Piloto facturación", "text": "Asistente en web y app para el 10 % de clientes"},
+        {"label": "Jun 2027", "title": "Escalado", "text": "100 % de clientes y canal WhatsApp"},
+        {"label": "Oct 2027", "title": "Agente aumentado", "text": "Copiloto para los 600 agentes"},
+        {"label": "Abr 2028", "title": "Proactividad", "text": "Avisos predictivos y análisis del 100 % de interacciones"}
+      ],
+      "current": 0
+    },
+    {
+      "layout": "process",
+      "title": "Cada caso de uso sigue el **mismo ciclo** de cinco pasos",
+      "steps": [
+        {"title": "Descubrir", "text": "Analizar contactos reales y medir la línea base"},
+        {"title": "Diseñar", "text": "Definir flujo, reglas y criterios de traspaso a humano"},
+        {"title": "Construir", "text": "Integrar datos, configurar el agente y probar"},
+        {"title": "Pilotar", "text": "Lanzar con un % de clientes y comparar con grupo de control"},
+        {"title": "Escalar", "text": "Extender y transferir a operación continua"}
+      ],
+      "highlight": 3
+    },
+    {
+      "layout": "image",
+      "title": "El equipo de atención **participa en el diseño** desde el primer día",
+      "image": "sample.jpg",
+      "side": "left",
+      "bullets": ["40 agentes en los talleres de diseño", "Plan de recualificación para 150 personas hacia roles de supervisión de IA", "Sin reducción de plantilla: absorbemos el crecimiento"],
+      "caption": "Taller de co-diseño, sede central"
+    },
+    {
+      "layout": "quote",
+      "quote": "Lo que más valoro no es que me contesten rápido, sino **no tener que volver a llamar**.",
+      "author": "Cliente residencial",
+      "role": "Panel de clientes, septiembre 2026"
+    },
+    {
+      "layout": "bullets",
+      "kicker": "Riesgos",
+      "title": "Los principales riesgos están **identificados y mitigados**",
+      "bullets": [
+        {"text": "Calidad de las respuestas de la IA", "sub": ["Validación humana en el piloto y umbral de confianza para traspaso"]},
+        {"text": "Cumplimiento normativo (RGPD, AI Act)", "sub": ["Evaluación de impacto antes del piloto; datos en la UE"]},
+        {"text": "Adopción por parte de clientes mayores", "sub": ["El teléfono sigue disponible; la IA también atiende por voz"]},
+        {"text": "Dependencia de proveedor", "sub": ["Arquitectura desacoplada y cláusulas de portabilidad"]}
+      ],
+      "callout": {"value": "0", "label": "riesgos críticos sin plan de mitigación tras la revisión de Riesgos y Cumplimiento"}
+    },
+    {
+      "layout": "statement",
+      "kicker": "Decisión",
+      "text": "Pedimos aprobar **6,8 M€** y el arranque del piloto de facturación en noviembre",
+      "subtitle": "Revisión de resultados del piloto en el comité de abril de 2027"
+    },
+    {
+      "layout": "closing",
+      "title": "Próximos pasos",
+      "next_steps": ["Aprobación del presupuesto (hoy)", "Constitución de la oficina de transformación (15 nov.)", "Selección de proveedor de plataforma (30 nov.)", "Arranque del piloto (marzo 2027)"],
+      "contact": ["Dirección de Operaciones", "operaciones@empresa.com"]
+    }
+  ]
+}

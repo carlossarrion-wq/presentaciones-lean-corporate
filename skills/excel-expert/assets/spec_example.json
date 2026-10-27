@@ -1,0 +1,45 @@
+{
+  "font": "Arial",
+  "sheets": [
+    {
+      "name": "Supuestos",
+      "cells": {
+        "A1": {"value": "Supuestos del informe", "bold": true},
+        "A2": {"value": "Tipo de IVA"},
+        "B2": {"value": 0.21, "format": "pct", "input": true, "key": true, "note": "Fuente: tipo general IVA España (dato del usuario)"},
+        "A3": {"value": "Objetivo mensual (€)"},
+        "B3": {"value": 15000, "format": "eur", "input": true},
+        "A5": {"value": "Leyenda: azul = dato editable; amarillo = supuesto clave"}
+      }
+    },
+    {
+      "name": "Ventas",
+      "title": "Ventas mensuales 2026",
+      "columns": [
+        {"header": "Mes", "format": "month", "width": 12},
+        {"header": "Base imponible", "format": "eur2", "input": true},
+        {"header": "IVA", "format": "eur2"},
+        {"header": "Total", "format": "eur2"},
+        {"header": "% objetivo", "format": "pct"},
+        {"header": "Canal"}
+      ],
+      "rows": [
+        ["2026-01-01", 12500, "=B{r}*Supuestos!$B$2", "=B{r}+C{r}", "=B{r}/Supuestos!$B$3", "Online"],
+        ["2026-02-01", 14100, "=B{r}*Supuestos!$B$2", "=B{r}+C{r}", "=B{r}/Supuestos!$B$3", "Tienda"],
+        ["2026-03-01", 16850, "=B{r}*Supuestos!$B$2", "=B{r}+C{r}", "=B{r}/Supuestos!$B$3", "Online"],
+        ["2026-04-01", 15300, "=B{r}*Supuestos!$B$2", "=B{r}+C{r}", "=B{r}/Supuestos!$B$3", "Mayorista"],
+        ["2026-05-01", 17920, "=B{r}*Supuestos!$B$2", "=B{r}+C{r}", "=B{r}/Supuestos!$B$3", "Online"],
+        ["2026-06-01", 13480, "=B{r}*Supuestos!$B$2", "=B{r}+C{r}", "=B{r}/Supuestos!$B$3", "Tienda"]
+      ],
+      "table": {"name": "TVentas", "style": "TableStyleMedium2"},
+      "totals": {"label": "Total", "functions": {"Base imponible": "SUM", "IVA": "SUM", "Total": "SUM", "% objetivo": "AVERAGE"}},
+      "conditional": [
+        {"range": "E4:E9", "type": "less_than", "value": 1, "kind": "bad"},
+        {"range": "B4:B9", "type": "data_bars"}
+      ],
+      "validations": [{"range": "F4:F200", "list": ["Online", "Tienda", "Mayorista"]}],
+      "charts": [{"type": "bar", "data": "B3:B9", "categories": "A4:A9", "anchor": "H3", "title": "Base imponible por mes", "y_title": "€"}],
+      "print": {"landscape": true}
+    }
+  ]
+}

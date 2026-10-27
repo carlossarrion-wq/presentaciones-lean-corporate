@@ -1,0 +1,105 @@
+{
+  "_info": "Perfil de plantilla Lean Corporate. Define qué layout del patrón se usa para cada rol, qué marcadores se rellenan, la rejilla útil y los tokens de diseño extraídos de la plantilla. Todas las medidas están en 'pulgadas de diseño' (lienzo 13,333 × 7,5); el motor las escala al tamaño real de la plantilla (26,66 × 15 in, factor 2).",
+  "name": "Lean Corporate",
+  "template": "plantilla.pptx",
+  "theme": {
+    "description": "Identidad Lean Corporate: turquesa de marca, verde azulado oscuro, IBM Plex Sans.",
+    "dark_content": false,
+    "bg": "F9F9F9",
+    "bg_dark": "1F4E5E",
+    "surface": "E5EFEF",
+    "border": "ABD6D5",
+    "text": "1E2A2F",
+    "text_muted": "4C6573",
+    "text_on_dark": "FFFFFF",
+    "text_on_dark_muted": "C9EEF3",
+    "primary": "1F4E5E",
+    "accent": "08BED4",
+    "accent_text": "0A8FA1",
+    "accent_2": "156082",
+    "positive": "2E8B57",
+    "negative": "D0453A",
+    "chart": [
+      "08BED4",
+      "1F4E5E",
+      "156082",
+      "ABD6D5",
+      "76A1D8",
+      "CEABCD"
+    ],
+    "font_heading": "IBM Plex Sans",
+    "font_body": "IBM Plex Sans Light",
+    "font_emph": "IBM Plex Sans",
+    "heading_bold": true,
+    "bullet_char": "▪",
+    "band": "08BED4",
+    "table_header": "1F4E5E",
+    "table_subheader": "CAEDFB"
+  },
+  "grid": {
+    "margin": 0.66,
+    "content_top": 1.95,
+    "content_top_no_subtitle": 1.5,
+    "bottom": 6.42,
+    "source_x": 2.25,
+    "source_y": 6.88,
+    "source_w": 9.6,
+    "cover_title_w": 10.2,
+    "cover_subtitle_w": 8.0
+  },
+  "sizes": {
+    "title": 42.5,
+    "title_min": 30,
+    "subtitle": 27.5,
+    "subtitle_min": 20,
+    "lead": 15,
+    "lead_min": 11.5,
+    "body": 16,
+    "body_min": 11
+  },
+  "roles": {
+    "content": {
+      "layout": "Title & Bullets 2",
+      "title": 0,
+      "subtitle": 13
+    },
+    "cover": {
+      "layout": "Cover Page",
+      "title": 0,
+      "subtitle": 1
+    },
+    "section": {
+      "layout": "Cover Page",
+      "title": 0,
+      "subtitle": 1
+    },
+    "agenda": {
+      "layout": "Agenda",
+      "title": 0,
+      "body": 1
+    },
+    "closing": {
+      "layout": "Logo & Short Text",
+      "body": 10
+    }
+  },
+  "page_numbers": "layout",
+  "footer_text": false,
+  "conventions": {
+    "section_numbering": "El título grande de cada diapositiva de contenido es la sección numerada del índice ('3. Caso de Uso “Gestión del Conocimiento”'); el subtítulo es el tema o mensaje de esa diapositiva.",
+    "avoid_layouts": [
+      "Divider",
+      "Statement/Quote",
+      "Thank you",
+      "Title",
+      "Bullets",
+      "Long Text",
+      "Title & Image/Text",
+      "Text & Image Alt",
+      "Title & Image Alt",
+      "Text & Image/Chart",
+      "Title & Short Text"
+    ],
+    "avoid_reason": "Esos layouts llevan el logotipo 'lean customer' o no tienen logo/numeración; no son coherentes con la marca Lean Corporate."
+  }
+}

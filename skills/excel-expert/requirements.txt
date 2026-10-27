@@ -1,0 +1,10 @@
+openpyxl>=3.1
+pandas>=2.0
+lxml>=4.9
+Pillow>=9.0          # imágenes en openpyxl (opcional)
+xlsxwriter>=3.0      # escritura rápida de ficheros grandes (opcional)
+xlrd>=2.0            # lectura directa de .xls con pandas (opcional)
+# Requisito de sistema (recálculo y conversión): LibreOffice
+#   Debian/Ubuntu: apt-get install -y libreoffice-calc
+#   macOS:         brew install --cask libreoffice
+#   Windows:       https://www.libreoffice.org  (o definir SOFFICE_PATH)
